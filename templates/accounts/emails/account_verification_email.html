@@ -1,0 +1,8 @@
+{% autoescape off %}
+
+hii {{user.first_name}},
+
+plz check on below your registation.
+http://{{domain}}{% url 'activate' uidb64=uid token=token %}
+
+{% endautoescape %}
